@@ -9,7 +9,11 @@
 
 
 function seriesResistance(arr) {
-
+    total = 0 
+    for(var i = 0; i < arr.length; i++) { 
+        total = total + arr[i] 
+    } 
+    return total > 1 ? total + ' ohms' : total + ' ohm'
 }
 
 
